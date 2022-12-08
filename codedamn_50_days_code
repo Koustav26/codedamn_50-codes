@@ -63,3 +63,23 @@ function convertTo24HrsFormat(time) {
 }
 
 console.log(`Converted time: ${convertTo24HrsFormat(time)}`)
+
+// 5.Write a function which accepts a string argument and returns the count of characters between the first and last character 'X'
+
+const str = 'XeroX';
+
+function getTheGapX(str) {
+    // write your solution here
+    const firstIndex = str.indexOf("X")
+
+    if(firstIndex === -1){
+        return -1;
+    }
+    const lastIndex = str.lastIndexOf("X");
+      firstIndex - lastIndex;
+
+    return lastIndex - firstIndex;
+}
+
+console.log(`Gap between the X's: ${getTheGapX(str)}`)
+
